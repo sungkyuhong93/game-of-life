@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+.grid {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff6600;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 30px;
+
+  & button {
+    margin-right: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4caf50; /* Background color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  & button:hover {
+    background-color: #45a049; /* Darker background color on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+  }
 }
